@@ -10,6 +10,11 @@ import UIKit
 
 class SoundViewController: UIViewController {
 
+    @IBOutlet weak var soundNameTextField: UITextField!
+    @IBOutlet weak var recordButton: UIButton!
+    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var addButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +26,18 @@ class SoundViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func recordTapped(_ sender: Any) {
+    }
+    
+    
+    @IBAction func playTapped(_ sender: Any) {
+    }
+    
+    
+    @IBAction func addTapped(_ sender: Any) {
+    }
+    
+    
     /*
     // MARK: - Navigation
 

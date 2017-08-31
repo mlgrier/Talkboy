@@ -53,8 +53,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gh1-Ro-stB">
-                                <rect key="frame" x="55" y="236" width="265" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sound Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gh1-Ro-stB">
+                                <rect key="frame" x="60" y="233" width="255" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -63,33 +63,48 @@
                                 <rect key="frame" x="138" y="94" width="98" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="recordTapped:" destination="jeA-6C-kTr" eventType="touchUpInside" id="UmE-D5-Muk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sK5-bT-Kv0">
-                                <rect key="frame" x="157.5" y="153" width="59" height="51"/>
+                                <rect key="frame" x="158" y="163" width="59" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playTapped:" destination="jeA-6C-kTr" eventType="touchUpInside" id="tUy-Sc-fth"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkk-lm-mYS">
-                                <rect key="frame" x="158.5" y="286" width="57" height="51"/>
+                                <rect key="frame" x="159" y="291" width="57" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="jeA-6C-kTr" eventType="touchUpInside" id="h1f-t7-nTm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gh1-Ro-stB" firstAttribute="leading" secondItem="uqP-1G-BgA" secondAttribute="leading" constant="55" id="5rr-hU-vMN"/>
-                            <constraint firstItem="fkk-lm-mYS" firstAttribute="centerX" secondItem="wnI-pW-vil" secondAttribute="centerX" id="62f-sJ-sZ6"/>
-                            <constraint firstItem="fkk-lm-mYS" firstAttribute="top" secondItem="gh1-Ro-stB" secondAttribute="bottom" constant="20" id="AnQ-hv-2hQ"/>
-                            <constraint firstItem="pis-7x-Xxr" firstAttribute="centerX" secondItem="wnI-pW-vil" secondAttribute="centerX" id="KRZ-WP-Nzs"/>
-                            <constraint firstItem="sK5-bT-Kv0" firstAttribute="centerX" secondItem="wnI-pW-vil" secondAttribute="centerX" id="Lgt-kQ-cNH"/>
-                            <constraint firstItem="gh1-Ro-stB" firstAttribute="centerX" secondItem="wnI-pW-vil" secondAttribute="centerX" id="NUr-DQ-TGJ"/>
-                            <constraint firstItem="sK5-bT-Kv0" firstAttribute="top" secondItem="pis-7x-Xxr" secondAttribute="bottom" constant="8" id="Uij-mV-arg"/>
-                            <constraint firstItem="pis-7x-Xxr" firstAttribute="top" secondItem="uqP-1G-BgA" secondAttribute="top" constant="30" id="X1p-Xe-Fe0"/>
-                            <constraint firstItem="uqP-1G-BgA" firstAttribute="trailing" secondItem="gh1-Ro-stB" secondAttribute="trailing" constant="55" id="llw-Ui-CJc"/>
-                            <constraint firstItem="gh1-Ro-stB" firstAttribute="top" secondItem="sK5-bT-Kv0" secondAttribute="bottom" constant="32" id="uT7-Pp-2Zo"/>
+                            <constraint firstItem="gh1-Ro-stB" firstAttribute="top" secondItem="sK5-bT-Kv0" secondAttribute="bottom" constant="19" id="5Vf-lD-iVQ"/>
+                            <constraint firstItem="gh1-Ro-stB" firstAttribute="centerX" secondItem="wnI-pW-vil" secondAttribute="centerX" id="ACr-FO-s8M"/>
+                            <constraint firstItem="pis-7x-Xxr" firstAttribute="top" secondItem="uqP-1G-BgA" secondAttribute="top" constant="30" id="Nwm-3z-xbZ"/>
+                            <constraint firstItem="uqP-1G-BgA" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="gh1-Ro-stB" secondAttribute="trailing" constant="60" id="QbI-Ka-9Wp"/>
+                            <constraint firstItem="gh1-Ro-stB" firstAttribute="leading" relation="lessThanOrEqual" secondItem="uqP-1G-BgA" secondAttribute="leading" constant="60" id="aEY-sF-bBo"/>
+                            <constraint firstItem="fkk-lm-mYS" firstAttribute="centerX" secondItem="wnI-pW-vil" secondAttribute="centerX" id="dK9-zJ-5RB"/>
+                            <constraint firstItem="sK5-bT-Kv0" firstAttribute="top" secondItem="pis-7x-Xxr" secondAttribute="bottom" constant="18" id="lCR-qh-uTj"/>
+                            <constraint firstItem="sK5-bT-Kv0" firstAttribute="centerX" secondItem="wnI-pW-vil" secondAttribute="centerX" id="rxy-qz-TRO"/>
+                            <constraint firstItem="fkk-lm-mYS" firstAttribute="top" secondItem="gh1-Ro-stB" secondAttribute="bottom" constant="28" id="w6f-Ib-usC"/>
+                            <constraint firstItem="pis-7x-Xxr" firstAttribute="centerX" secondItem="wnI-pW-vil" secondAttribute="centerX" id="xZR-gB-4Wd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uqP-1G-BgA"/>
                     </view>
+                    <connections>
+                        <outlet property="addButton" destination="fkk-lm-mYS" id="6bb-qm-HKq"/>
+                        <outlet property="playButton" destination="sK5-bT-Kv0" id="fce-h8-qAv"/>
+                        <outlet property="recordButton" destination="pis-7x-Xxr" id="h0B-Uc-rR9"/>
+                        <outlet property="soundNameTextField" destination="gh1-Ro-stB" id="qJv-7W-hpL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8VH-xK-sBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
