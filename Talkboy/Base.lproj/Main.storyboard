@@ -53,50 +53,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWv-cu-wA6">
-                                <rect key="frame" x="138" y="100" width="98" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NP-qd-Jgx">
-                                <rect key="frame" x="158" y="165" width="59" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Le0-id-HK9">
-                                <rect key="frame" x="159" y="298" width="57" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gh1-Ro-stB">
                                 <rect key="frame" x="55" y="236" width="265" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pis-7x-Xxr">
+                                <rect key="frame" x="138" y="94" width="98" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Record"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sK5-bT-Kv0">
+                                <rect key="frame" x="157.5" y="153" width="59" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Play"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkk-lm-mYS">
+                                <rect key="frame" x="158.5" y="286" width="57" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Add"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="UWv-cu-wA6" firstAttribute="top" secondItem="uqP-1G-BgA" secondAttribute="top" constant="36" id="1ci-Wd-zdQ"/>
-                            <constraint firstItem="gh1-Ro-stB" firstAttribute="leading" secondItem="uqP-1G-BgA" secondAttribute="leading" constant="55" id="1zZ-bZ-oim"/>
-                            <constraint firstItem="gh1-Ro-stB" firstAttribute="top" secondItem="9NP-qd-Jgx" secondAttribute="bottom" constant="32" id="4n6-vu-SpG"/>
-                            <constraint firstItem="Le0-id-HK9" firstAttribute="top" secondItem="gh1-Ro-stB" secondAttribute="bottom" constant="32" id="E2y-hR-ntI"/>
-                            <constraint firstItem="UWv-cu-wA6" firstAttribute="centerX" secondItem="wnI-pW-vil" secondAttribute="centerX" id="MKz-MG-sUb"/>
-                            <constraint firstItem="Le0-id-HK9" firstAttribute="centerX" secondItem="wnI-pW-vil" secondAttribute="centerX" id="dvL-OL-DpZ"/>
-                            <constraint firstItem="9NP-qd-Jgx" firstAttribute="top" secondItem="UWv-cu-wA6" secondAttribute="bottom" constant="26" id="l3f-WU-sh3"/>
-                            <constraint firstItem="uqP-1G-BgA" firstAttribute="trailing" secondItem="gh1-Ro-stB" secondAttribute="trailing" constant="55" id="ljC-4E-m9N"/>
-                            <constraint firstItem="gh1-Ro-stB" firstAttribute="centerX" secondItem="wnI-pW-vil" secondAttribute="centerX" id="pbH-pA-0FN"/>
-                            <constraint firstItem="9NP-qd-Jgx" firstAttribute="centerX" secondItem="wnI-pW-vil" secondAttribute="centerX" id="yxQ-eJ-c2w"/>
+                            <constraint firstItem="gh1-Ro-stB" firstAttribute="leading" secondItem="uqP-1G-BgA" secondAttribute="leading" constant="55" id="5rr-hU-vMN"/>
+                            <constraint firstItem="fkk-lm-mYS" firstAttribute="centerX" secondItem="wnI-pW-vil" secondAttribute="centerX" id="62f-sJ-sZ6"/>
+                            <constraint firstItem="fkk-lm-mYS" firstAttribute="top" secondItem="gh1-Ro-stB" secondAttribute="bottom" constant="20" id="AnQ-hv-2hQ"/>
+                            <constraint firstItem="pis-7x-Xxr" firstAttribute="centerX" secondItem="wnI-pW-vil" secondAttribute="centerX" id="KRZ-WP-Nzs"/>
+                            <constraint firstItem="sK5-bT-Kv0" firstAttribute="centerX" secondItem="wnI-pW-vil" secondAttribute="centerX" id="Lgt-kQ-cNH"/>
+                            <constraint firstItem="gh1-Ro-stB" firstAttribute="centerX" secondItem="wnI-pW-vil" secondAttribute="centerX" id="NUr-DQ-TGJ"/>
+                            <constraint firstItem="sK5-bT-Kv0" firstAttribute="top" secondItem="pis-7x-Xxr" secondAttribute="bottom" constant="8" id="Uij-mV-arg"/>
+                            <constraint firstItem="pis-7x-Xxr" firstAttribute="top" secondItem="uqP-1G-BgA" secondAttribute="top" constant="30" id="X1p-Xe-Fe0"/>
+                            <constraint firstItem="uqP-1G-BgA" firstAttribute="trailing" secondItem="gh1-Ro-stB" secondAttribute="trailing" constant="55" id="llw-Ui-CJc"/>
+                            <constraint firstItem="gh1-Ro-stB" firstAttribute="top" secondItem="sK5-bT-Kv0" secondAttribute="bottom" constant="32" id="uT7-Pp-2Zo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uqP-1G-BgA"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8VH-xK-sBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="986" y="135"/>
+            <point key="canvasLocation" x="984.79999999999995" y="134.48275862068968"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XHF-yd-oKb">
