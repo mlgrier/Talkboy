@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		311276BE1F57AC7E00C33AD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311276BD1F57AC7E00C33AD4 /* AppDelegate.swift */; };
-		311276C01F57AC7E00C33AD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311276BF1F57AC7E00C33AD4 /* ViewController.swift */; };
 		311276C31F57AC7E00C33AD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311276C11F57AC7E00C33AD4 /* Main.storyboard */; };
 		311276C61F57AC7E00C33AD4 /* Talkboy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 311276C41F57AC7E00C33AD4 /* Talkboy.xcdatamodeld */; };
 		311276C81F57AC7E00C33AD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311276C71F57AC7E00C33AD4 /* Assets.xcassets */; };
 		311276CB1F57AC7E00C33AD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311276C91F57AC7E00C33AD4 /* LaunchScreen.storyboard */; };
+		311276D31F57ADEB00C33AD4 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311276D21F57ADEB00C33AD4 /* MainTableViewController.swift */; };
+		311276D51F57AEA600C33AD4 /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311276D41F57AEA600C33AD4 /* SoundViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		311276BA1F57AC7E00C33AD4 /* Talkboy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talkboy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		311276BD1F57AC7E00C33AD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		311276BF1F57AC7E00C33AD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		311276C21F57AC7E00C33AD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		311276C51F57AC7E00C33AD4 /* Talkboy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Talkboy.xcdatamodel; sourceTree = "<group>"; };
 		311276C71F57AC7E00C33AD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		311276CA1F57AC7E00C33AD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		311276CC1F57AC7E00C33AD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		311276D21F57ADEB00C33AD4 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		311276D41F57AEA600C33AD4 /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				311276BD1F57AC7E00C33AD4 /* AppDelegate.swift */,
-				311276BF1F57AC7E00C33AD4 /* ViewController.swift */,
+				311276D21F57ADEB00C33AD4 /* MainTableViewController.swift */,
+				311276D41F57AEA600C33AD4 /* SoundViewController.swift */,
 				311276C11F57AC7E00C33AD4 /* Main.storyboard */,
 				311276C71F57AC7E00C33AD4 /* Assets.xcassets */,
 				311276C91F57AC7E00C33AD4 /* LaunchScreen.storyboard */,
@@ -139,8 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				311276D51F57AEA600C33AD4 /* SoundViewController.swift in Sources */,
 				311276C61F57AC7E00C33AD4 /* Talkboy.xcdatamodeld in Sources */,
-				311276C01F57AC7E00C33AD4 /* ViewController.swift in Sources */,
+				311276D31F57ADEB00C33AD4 /* MainTableViewController.swift in Sources */,
 				311276BE1F57AC7E00C33AD4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
