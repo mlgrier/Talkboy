@@ -16,7 +16,7 @@ class SoundViewController: UIViewController {
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var addButton: UIButton!
     
-    var audioRecorder = AVAudioRecorder()
+    var audioRecorder : AVAudioRecorder?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,14 +43,25 @@ class SoundViewController: UIViewController {
                 
                 // Create the Audio Recorder
                 
-                try? audioRecorder = AVAudioRecorder(url: audioURL, settings: settings)
-                audioRecorder.prepareToRecord()
+                audioRecorder = try? AVAudioRecorder(url: audioURL, settings: settings)
+                audioRecorder?.prepareToRecord()
             }
         }
     }
     
     @IBAction func recordTapped(_ sender: Any) {
-        audioRecorder.record()
+        
+        if let audioRecorder = self.audioRecorder {
+            
+            if audioRecorder.isRecording {
+                audioRecorder.stop()
+                recordButton.setTitle("Record", for: .normal)
+            } else {
+                audioRecorder.record()
+                recordButton.setTitle("Stop", for: .normal)
+            }
+        }
+        
     }
     
     
