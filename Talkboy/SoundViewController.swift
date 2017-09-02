@@ -17,6 +17,8 @@ class SoundViewController: UIViewController {
     @IBOutlet weak var addButton: UIButton!
     
     var audioRecorder : AVAudioRecorder?
+    var audioPlayer : AVAudioPlayer?
+    var audioURL : URL?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +37,7 @@ class SoundViewController: UIViewController {
             if let audioURL = NSURL.fileURL(withPathComponents: patchCompoenents) {
                 // Create some settings
                 
+                self.audioURL = audioURL
                 var settings : [String:Any] = [:]
                 settings[AVFormatIDKey] = Int(kAudioFormatMPEG4AAC)
                 settings[AVSampleRateKey] = 44100.0
@@ -47,6 +50,10 @@ class SoundViewController: UIViewController {
                 audioRecorder?.prepareToRecord()
             }
         }
+        
+        playButton.isEnabled = false
+        soundNameTextField.isEnabled = false
+        addButton.isEnabled = false
     }
     
     @IBAction func recordTapped(_ sender: Any) {
@@ -56,9 +63,15 @@ class SoundViewController: UIViewController {
             if audioRecorder.isRecording {
                 audioRecorder.stop()
                 recordButton.setTitle("Record", for: .normal)
+                playButton.isEnabled = true
+                soundNameTextField.isEnabled = true
+                addButton.isEnabled = true
             } else {
                 audioRecorder.record()
                 recordButton.setTitle("Stop", for: .normal)
+                playButton.isEnabled = false
+                soundNameTextField.isEnabled = false
+                addButton.isEnabled = false
             }
         }
         
@@ -66,6 +79,11 @@ class SoundViewController: UIViewController {
     
     
     @IBAction func playTapped(_ sender: Any) {
+        if let audioURL = self.audioURL {
+            audioPlayer = try? AVAudioPlayer(contentsOf: audioURL)
+            audioPlayer?.play()
+            
+        }
     }
     
     
